@@ -1,0 +1,23 @@
+[0m[[0minfo[0m] [0mPackaging E:\qizhi\qizhi-news\target\scala-2.12\qizhi-news_2.12-1.0.0-sources.jar ...[0m
+[0m[[0mdebug[0m] [0mInput file mappings:[0m
+[0m[[0mdebug[0m] [0m	logback.xml[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\conf\logback.xml[0m
+[0m[[0mdebug[0m] [0m	models\Common.scala[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\app\models\Common.scala[0m
+[0m[[0mdebug[0m] [0m	Module.scala[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\app\Module.scala[0m
+[0m[[0mdebug[0m] [0m	RequestHandler.scala[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\app\RequestHandler.scala[0m
+[0m[[0mdebug[0m] [0m	controllers\NewsController.scala[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\app\controllers\NewsController.scala[0m
+[0m[[0mdebug[0m] [0m	models\JsonFormats.scala[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\app\models\JsonFormats.scala[0m
+[0m[[0mdebug[0m] [0m	application.conf[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\conf\application.conf[0m
+[0m[[0mdebug[0m] [0m	utils\DateTimeUtil.scala[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\app\utils\DateTimeUtil.scala[0m
+[0m[[0mdebug[0m] [0m	routes[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\conf\routes[0m
+[0m[[0mdebug[0m] [0m	services\CounterService.scala[0m
+[0m[[0mdebug[0m] [0m	  E:\qizhi\qizhi-news\app\services\CounterService.scala[0m
+[0m[[0minfo[0m] [0mDone packaging.[0m

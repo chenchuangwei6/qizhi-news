@@ -1,0 +1,290 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>新版奇智在线客服系统使用指南-奇智机器人</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css" />
+        <link href="css/new.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    </head>
+
+    <body>
+            <!--head-->
+            <div class="header bg01">
+            <div class="head">
+                <div class="logo fl"><a href="index.html"><img src="images/logo.png" /></a></div>
+                <div class="deng fr">
+                    <span><a>登录</a>
+                        <ul>
+                            <li><a href="javascript:;" class="loginRobot">登录机器人系统</a></li>
+                            <li><a href="javascript:;" class="loginKf">登录在线客服系统</a></li>
+                        </ul>
+                    </span>
+                    <span><a href="javascript:;" class="reg">注册</a></span>
+                </div>
+                <ul class="nav fr">
+                    <li><a href="index.html">首页</a><b></b></li>
+                    <li><a>产品&nbsp;&nbsp;<i><img src="images/xia.png" /></i><em><img src="images/xia01.png" /></em><label><img src="images/xia02.png" /></label></a><b></b>
+                        <dl>
+                            <dt><a href="duihua.html">
+                                <strong><img src="images/nav1.png" /></strong>
+                                <span>对话机器人</span>
+                            </a></dt>
+                            <dt><a href="zaixian.html">
+                                <strong><img src="images/nav2.png" /></strong>
+                                <span>在线客服系统</span>
+                            </a></dt>
+                            <dt><a href="duolun.html">
+                                <strong><img src="images/nav3.png" /></strong>
+                                <span>多轮对话</span>
+                            </a></dt>
+                            <dt><a href="shuju.html">
+                                <strong><img src="images/nav4.png" /></strong>
+                                <span>数据分析</span>
+                            </a></dt>
+                            <dt><a href="gongdan.html">
+                                <strong><img src="images/nav5.png" /></strong>
+                                <span>工单系统</span>
+                            </a></dt>
+                        </dl>
+                    </li>
+                    <li><a href="jishu.html">技术优势</a><b></b></li>
+                    <li><a href="jiage.html">价格</a><b></b></li>
+                    <li><a href="anli.html">案例</a><b></b></li>
+                    <li><a href="yanshi.html">演示</a><b></b></li>
+                    <li class="on"><a href="dongtai.html">动态</a><b></b></li>
+                    <li><a href="guanyu.html">关于我们</a><b></b></li>
+                </ul>
+
+                <div class="sav fr"><span><img src="images/nav01.png" /></span><a><img src="images/nav01.png" /></a></div>
+                <div class="zcs fr"><a href="javascript:;" class="reg">注册</a></div>
+            </div>
+        </div>
+
+            <!--下拉-->
+        <div class="xia ov">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><p>产品&nbsp;&nbsp;&gt;</p>
+                    <dl class="dis">
+                        <dt><a href="duihua.html">
+                            <strong><img src="images/nav1.png" /></strong>
+                            <span>对话机器人</span>
+                        </a></dt>
+                        <dt><a href="zaixian.html">
+                            <strong><img src="images/nav2.png" /></strong>
+                            <span>在线客服系统</span>
+                        </a></dt>
+                        <dt><a href="duolun.html">
+                            <strong><img src="images/nav3.png" /></strong>
+                            <span>多轮对话</span>
+                        </a></dt>
+                        <dt><a href="shuju.html">
+                            <strong><img src="images/nav4.png" /></strong>
+                            <span>数据分析</span>
+                        </a></dt>
+                        <dt><a href="gongdan.html">
+                            <strong><img src="images/nav5.png" /></strong>
+                            <span>工单系统</span>
+                        </a></dt>
+                    </dl>
+                </li>
+                <li><a href="jishu.html">技术优势</a></li>
+                <li><a href="jiage.html">价格</a></li>
+                <li><a href="anli.html">案例</a></li>
+                <li><a href="yanshi.html">演示</a></li>
+                <li><a href="dongtai.html">动态</a></li>
+                <li><a href="guanyu.html">关于我们</a></li>
+            </ul>
+            <dl class="zc ov">
+                <dt><a href="zhuce.html">注册</a></dt>
+                <dd class="fl"><a href="denglu.html">登录机器人系统</a></dd>
+                <dd class="fr"><a href="denglu.html">登录在线客服系统</a></dd>
+            </dl>
+        </div>
+        <script>
+window.onbeforeunload = function(){
+    //刷新后页面自动回到顶部
+    document.documentElement.scrollTop = 0;  //ie下
+    document.body.scrollTop = 0;  //非ie
+}
+</script>
+        <script>
+$(document).ready(function () {
+    var navtop = $(".header").offset().top;
+    $(window).scroll(function () {
+        var t = $(window).scrollTop();
+        if (t > navtop) {
+            $(".header").addClass("bg");
+        } else {
+            $(".header").removeClass("bg");
+        }
+    })
+});
+</script>
+        <script>
+$(document).ready(function(){
+    $(".sav").click(function(){
+        $(".xia").toggleClass("dis")
+        $(".header").toggleClass("kk")
+    });
+    $(".xia p").click(function(){
+        $(".xia dl").toggleClass("dis")
+    });
+});
+</script>
+
+            <!--banner-->
+        <section class="updata_pas" style="padding:0.5em;width: 1200px;margin: 5em auto;">
+                <!--<div class="brand"><a href="../index.html">首页</a>/<a href="updata.html">新闻列表</a></div>-->
+            <ol class="brand breadcrumb">
+                <li><a href="index.html"><span style="color: #41C6E3;">首页</span></a> <span style="color: #ccc;">/</span> <a href="dongtai.html"><span style="color: #41C6E3;">新闻列表</span></a></li>
+                
+            </ol>
+            <h1 style="text-align:center;font-size: 36px;" class="updata_title">新版奇智在线客服系统使用指南</h1>
+            <p style="text-align:center;margin:20px;">2018-08-03 15:00</p>
+            <div class="passage">
+            <h2><a href="http://www.chatbot.cn:3000/#/document/zxkfxt_xsyd?id=%e9%a1%b5%e9%9d%a2%e4%bb%8b%e7%bb%8d" target="_blank" style="color: rgb(52, 73, 94);">页面介绍</a></h2><p>​ 登录系统后，看到的是默认页面：<span style="color: rgb(44, 62, 80);">客服会话</span>&nbsp;页面，我们以该页面为例来介绍系统页面的构成：</p><p><span style="color: rgb(44, 62, 80);">1. 顶栏</span></p><p>​ 位于该页面的顶部，顶栏的左侧为 奇智logo ，右侧为该账号的名称和状态。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180625173404160.png" alt="image-20180625173404160"></p><p><span style="color: rgb(44, 62, 80);">2. 菜单栏</span></p><p>​ 位于该页面的左侧，默认为收起状态，点击顶部切换按钮可切换&nbsp;<span style="color: rgb(44, 62, 80);">收起/展开</span>&nbsp;状态。收起时，显示为各个功能页面的图标；展开时，显示为各个功能页面的图标和名称。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180625172837529.png" alt="image-20180625172837529"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180625173036943.png" alt="image-20180625173036943"></p><p><span style="color: rgb(44, 62, 80);">3. 功能区域</span></p><p>​ 位于页面的中部，显示为各个功能页面的功能，可以其中设置和操作。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180625173817395.png" alt="image-20180625173817395"></p><h2><a href="http://www.chatbot.cn:3000/#/document/zxkfxt_xsyd?id=%e5%9f%ba%e6%9c%ac%e8%ae%be%e7%bd%ae" target="_blank" style="color: rgb(52, 73, 94);">基本设置</a></h2><p>​ 为了获得更好的使用效果，需要先进行一些基本设置，下面来说明如何设置：</p><p><span style="color: rgb(44, 62, 80);">1. 新建账号</span></p><p>​ 在&nbsp;<span style="color: rgb(44, 62, 80);">账号权限</span>&nbsp;页面，点击右上角的「新建账号」按钮，进入设置页面，输入相应的设置，选择角色，然后点击「保存」按钮，一个账号就新建成功了。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626180439410.png" alt="image-20180626180439410"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180626195312307.png" alt="image-20180626195312307"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180626180054729.png" alt="image-20180626180054729"></p><p><span style="color: rgb(44, 62, 80);">2. 个人设置</span></p><p>​ 在&nbsp;<span style="color: rgb(44, 62, 80);">设置-个人设置</span>&nbsp;中，您可以进行个人的多项相关设置，<span style="color: rgb(44, 62, 80);">个人设置</span>属于个性化设置，仅对当前账号生效，具体如下：</p><p><img src="http://www.chatbot.cn:3000/images/image-20180625195338360.png" alt="image-20180625195338360"></p><p>​</p><p>​ 设置与用户对话时的显示名称、头像和欢迎语。</p><blockquote>欢迎语是指接待用户时，由机器人接待转接到客服接待时，客服端自动发出的第一句引导语。</blockquote><p><img src="http://www.chatbot.cn:3000/images/image-20180626103027805.png" alt="image-20180626103027805"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180626164056871.png" alt="image-20180626164056871"></p><p>​</p><p>​ 设置有一个新的人工会话时是否有提示音，以及接收到来自用户的消息时，是否显示输入框中的推荐回答。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180625193723614.png" alt="image-20180625193723614"></p><p>​</p><p>​ 选择相应的项目进行设置，设置完成后点击底部的「保存」按钮，则个人设置就设置成功了。</p><p><span style="color: rgb(44, 62, 80);">3. 会话设置</span></p><p>​ 在&nbsp;<span style="color: rgb(44, 62, 80);">设置-会话设置</span>&nbsp;中，您可以进行会话的相关设置，<span style="color: rgb(44, 62, 80);">会话设置</span>属于通用设置，会对本账号及其子账号生效，具体如下：</p><p><img src="http://www.chatbot.cn:3000/images/image-20180625195635340.png" alt="image-20180625195635340"></p><p>​ 设置用户不回复会话自动结束会话的分钟数；</p><p>​ 设置客服不回复会话等待时长标红显示的分钟数；</p><p>​ 设置机器人回答不了用户问题自动转人工的规则。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626113858190.png" alt="image-20180626113858190"></p><p>​</p><p>​ 选择相应的项目进行设置，设置完成后点击底部的「保存」按钮，则会话设置项就设置成功了。</p><h2><a href="http://www.chatbot.cn:3000/#/document/zxkfxt_xsyd?id=%e5%9f%ba%e6%9c%ac%e5%8a%9f%e8%83%bd" target="_blank" style="color: rgb(52, 73, 94);">基本功能</a></h2><p>​ 在接待用户之前，需要先在页面右上角设置状态：如果是在线状态，则可以正常接待用户；如果是休息或离开状态，则新的用户来到之后不会被分配到该客服。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626143343274.png" alt="image-20180626143343274"></p><p><span style="color: rgb(44, 62, 80);">1. 接待用户</span></p><p>​ 在&nbsp;<span style="color: rgb(44, 62, 80);">客服会话</span>&nbsp;页面，当有新的用户接入时，会在左侧的“人工会话中”和“机器人会话中”显示。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626151038651.png" alt="image-20180626151038651"></p><p>​</p><p>​ 用户接入时默认是由机器人接待的(可以在&nbsp;<span style="color: rgb(44, 62, 80);">设置</span>&nbsp;中设置个人和团队机器人的开关)，您可以在&nbsp;<span style="color: rgb(44, 62, 80);">机器人会话中</span>&nbsp;点击某个会话，在右侧查看该会话的对话信息和用户信息，还可以转接该会话到人工客服或其他客服。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626155142707.png" alt="image-20180626155142707"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180627103703121.png" alt="image-20180627103703121"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180627103801052.png" alt="image-20180627103801052"></p><p>​</p><p>​ 当将用户转接到人工客服接待后，除了上述说的功能外，还提供了一些辅助功能：</p><blockquote>推荐回答</blockquote><p>​ 在用户发送问题时，系统可以根据您的设置自动推荐一个该问题的回答列表。您也可以在右侧&nbsp;<span style="color: rgb(44, 62, 80);">推荐回答</span>&nbsp;下的搜索框中搜索问题回复用户。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626165540314.png" alt="image-20180626165540314"></p><p>​ 推荐回答的设置位于奇智机器人系统的&nbsp;<span style="color: rgb(44, 62, 80);">知识管理-知识库总览</span>&nbsp;，在这里，您可以添加和管理知识点，添加保存后，就可以在在线客服系统的推荐回答中生效了。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180627094555241.png" alt="image-20180627094555241"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180627094756350.png" alt="image-20180627094756350"></p><blockquote>快捷回复</blockquote><p>​ 针对用户的常见问题，您可以在&nbsp;<span style="color: rgb(44, 62, 80);">快捷回复</span>&nbsp;中设置个人与团队的快捷回复，在与用户对话时，在右侧的&nbsp;<span style="color: rgb(44, 62, 80);">快捷回复</span>&nbsp;中点击相应的快捷回复项可以直接发送给用户。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180627100447491.png" alt="image-20180627100447491"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180627100810204.png" alt="image-20180627100810204"></p><p>​</p><p>​ 除了上述在右侧点击发送快捷回复外，还可以在输入框中以“/”开头输入，会自动联想快捷回复的列表，点击相应的回复即可直接发送给用户。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180627101608040.png" alt="image-20180627101608040"></p><p><span style="color: rgb(44, 62, 80);">2. 留言</span></p><p>​ 当人工客服都不在线时，用户可以将问题留言给客服。</p><p>​ 客服可以在&nbsp;<span style="color: rgb(44, 62, 80);">留言</span>&nbsp;页面 查看具体的留言信息和回复。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626171956241.png" alt="image-20180626171956241"></p><p><span style="color: rgb(44, 62, 80);">3. 实时监控</span></p><p>​ 在&nbsp;<span style="color: rgb(44, 62, 80);">实时监控</span>&nbsp;页面，您可以当前实时的：人工客服排队情况、机器人会话情况、人工客服会话情况。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626172954465.png" alt="image-20180626172954465"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180626173034994.png" alt="image-20180626173034994"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180626173309069.png" alt="image-20180626173309069"></p><p><span style="color: rgb(44, 62, 80);">4. 数据报表</span></p><p>​ 在&nbsp;<span style="color: rgb(44, 62, 80);">数据报表</span>&nbsp;页面，您可以查看系统中客服和机器人的各项会话统计数据。</p><p><img src="http://www.chatbot.cn:3000/images/image-20180626173736757.png" alt="image-20180626173736757"></p><p><img src="http://www.chatbot.cn:3000/images/image-20180626173823916.png" alt="image-20180626173823916"></p><p>​ 以上就是在线客服系统入门文档的全部内容，现在可以进入系统实际使用起来了。</p>
+            </div>
+        </section>
+
+                <!--fanye-->
+                
+
+                <!--免费试用-->
+            <div class="mbox mt ov">
+                <div class="title ov">
+                    <span>立即开通奇智机器人，免费试用全部功能</span>
+                    <p><b></b><a>free trial all features</a><b></b></p>
+                </div>
+                <div class="title01 ov">
+                    <span>立即开通奇智机器人<br />免费试用全部功能</span>
+                    <p><b></b><a>free trial all features</a><b></b></p>
+                </div>
+
+                <div class="sbox ov">
+                    <strong><img src="images/tel.jpg" /></strong>
+                    <p><input type="text" placeholder="请输入您的手机号..." id="phoneNum" /></p >
+                    <span><input type="button" value="免费试用"  class="freeUse"/></span>
+                </div>
+            </div>
+                <!--[if lt IE 9]>
+
+                <![endif]-->
+
+                <!--foot-->
+        <div class="footer ov">
+            <div class="foot ov">
+                <div class="logo fl"><img src="images/logo.png" /></div>
+                <div class="xw fl">
+                    <ul>
+                        <li><a href="https://weibo.com/p/1005055792483262/" target="_blank"><img src="images/fb03.png" /></a></li>
+                        <li class="on"><a><img src="images/fb02.png" /></a><p><img src="images/wx.jpg" /></p></li>
+                        <li><a href="https://shang.qq.com/wpa/qunwpa?idkey=c54b25c8520c54afb7d9125f4e1cd50e86c4d50ddff1dd92a4d060d3b1df6c4e"  alt="奇智机器人官方QQ群" title="官方QQ群: 476248184" target="_blank"><img src="images/fb01.png" /></a></li>
+                    </ul>
+                </div>
+                <ul class="lx fl">
+                    <li><strong><img src="images/f01.png" /></strong><p><a href="tel:400-604-5033" title="" style="color: white;">电话: 400-604-5033</a></p></li>
+                    <li><strong><img src="images/f02.png" /></strong><p>商务合作: market@chatbot.cn</p></li>
+                    <li><strong><img src="images/f03.png" /></strong><p>技术支持: support@chatbot.cn</p></li>
+                    <li><strong><img src="images/f04.png" /></strong><p>公司地址:上海市浦东新区祖冲之路1559号创意大厦7001</p></li>
+                </ul>
+                <dl class="nav fl">
+                    <dt><a href="duihua.html">产品</a><a href="jishu.html">技术优势</a><a href="jiage.html">价格</a><a href="anli.html">案例</a><a href="yanshi.html">演示</a><a href="dongtai.html">动态</a><a href="guanyu.html">关于我们</a></dt>
+                    <dd><span><a href="anli.html">客户案例</a></span><p><a href="anli.html?key=lkl"><img src="images/c01.png" /></a></p><p><a href="anli.html?key=ge"><img src="images/footer-ge.png" /></a></p><p><a href="anli.html?key=58"><img src="images/footer-58.png" /></a></p><p><a href="anli.html?key=zgcyh"><img src="images/footer-zgcyh.png" /></a></p></dd>
+                </dl>
+                <div class="bottom fl">
+                    <p>奇智机器人-专业的人机智能交互解决方案提供商</p>
+                    <span>Copyright@2017 上海八斗智能技术有限公司 | 沪ICP备17004486号-1|</span>
+                </div>
+            </div>
+        </div>
+<script>
+        $(".freeUse").click(function(){
+            window.open("https://cloud.chatbot.cn/cloud/register?phone="+$("#phoneNum").val())
+        })
+</script>
+<script type="text/javascript">
+                $(document).ready(function(){
+                    $(".footer .on").click(function(){
+                        $(".footer .on p").toggleClass("dis")
+                    });
+                });
+
+             $(document).ready(function() {
+                 // val()无参数是取值，有参数是设置
+                 // 为了更好的兼容性，将下面的val()设置与input中的placeholder的值设置相同
+                 $(".sbox p input").val("");
+                 textFill($('input.text1'));
+             });
+
+             function textFill(input) {
+                 var originalvalue = input.val();
+                 input.focus(function() {
+                     if ($.trim(input.val()) == originalvalue) {
+                         input.val('');
+                     }
+                 });
+                 input.blur(function() {
+                     if ($.trim(input.val()) == '') {
+                         input.val(originalvalue);
+                     }
+                 });
+             }
+</script>
+<script>
+$(document).ready(function(){
+    $(".footer .on").click(function(){
+        $(".footer .on p").toggleClass("dis")
+    });
+});
+// 从地址栏获取参数
+(function ($) {
+    $.getUrlParam = function (name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;
+    }
+})(jQuery);
+var currentKey = $.getUrlParam('key');
+
+if(currentKey =="58"){
+    $('.biao a').eq(2).addClass("on").siblings().removeClass('on')
+}else if(currentKey =="ge"){
+    $('.biao a').eq(3).addClass("on").siblings().removeClass('on')
+}else if(currentKey =="zgcyh"){
+    $(".tab01 ul li").eq(2).addClass("on").siblings().removeClass('on')
+}
+</script>
+<script src="./js/main.js" charset="utf-8"></script>
+<script src='http://cloud.chatbot.cn/cloud/robot/webjs/5b3c47952400008a1b1f05c3' language="JavaScript"></script>
+            <!--百度统计-->
+        <script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c1ca7e2ebb1260ee586994702dcb5f5c";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+            <!--百度统计/-->
+            <!--cnzz-->
+        <div style="display: none;">
+            <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+      document.write(unescape("%3Cspan id='cnzz_stat_icon_1256449100'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
+              "s95.cnzz.com/stat.php%3Fid%3D1256449100' type='text/javascript'%3E%3C/script%3E"));
+
+    </script>
+        </div>
+            <!--cnzz/-->
+</body>
+</html>

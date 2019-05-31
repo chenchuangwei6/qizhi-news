@@ -1,0 +1,290 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>与时俱进的智能客服-奇智机器人</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css" />
+        <link href="css/new.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    </head>
+
+    <body>
+            <!--head-->
+            <div class="header bg01">
+            <div class="head">
+                <div class="logo fl"><a href="index.html"><img src="images/logo.png" /></a></div>
+                <div class="deng fr">
+                    <span><a>登录</a>
+                        <ul>
+                            <li><a href="javascript:;" class="loginRobot">登录机器人系统</a></li>
+                            <li><a href="javascript:;" class="loginKf">登录在线客服系统</a></li>
+                        </ul>
+                    </span>
+                    <span><a href="javascript:;" class="reg">注册</a></span>
+                </div>
+                <ul class="nav fr">
+                    <li><a href="index.html">首页</a><b></b></li>
+                    <li><a>产品&nbsp;&nbsp;<i><img src="images/xia.png" /></i><em><img src="images/xia01.png" /></em><label><img src="images/xia02.png" /></label></a><b></b>
+                        <dl>
+                            <dt><a href="duihua.html">
+                                <strong><img src="images/nav1.png" /></strong>
+                                <span>对话机器人</span>
+                            </a></dt>
+                            <dt><a href="zaixian.html">
+                                <strong><img src="images/nav2.png" /></strong>
+                                <span>在线客服系统</span>
+                            </a></dt>
+                            <dt><a href="duolun.html">
+                                <strong><img src="images/nav3.png" /></strong>
+                                <span>多轮对话</span>
+                            </a></dt>
+                            <dt><a href="shuju.html">
+                                <strong><img src="images/nav4.png" /></strong>
+                                <span>数据分析</span>
+                            </a></dt>
+                            <dt><a href="gongdan.html">
+                                <strong><img src="images/nav5.png" /></strong>
+                                <span>工单系统</span>
+                            </a></dt>
+                        </dl>
+                    </li>
+                    <li><a href="jishu.html">技术优势</a><b></b></li>
+                    <li><a href="jiage.html">价格</a><b></b></li>
+                    <li><a href="anli.html">案例</a><b></b></li>
+                    <li><a href="yanshi.html">演示</a><b></b></li>
+                    <li class="on"><a href="dongtai.html">动态</a><b></b></li>
+                    <li><a href="guanyu.html">关于我们</a><b></b></li>
+                </ul>
+
+                <div class="sav fr"><span><img src="images/nav01.png" /></span><a><img src="images/nav01.png" /></a></div>
+                <div class="zcs fr"><a href="javascript:;" class="reg">注册</a></div>
+            </div>
+        </div>
+
+            <!--下拉-->
+        <div class="xia ov">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><p>产品&nbsp;&nbsp;&gt;</p>
+                    <dl class="dis">
+                        <dt><a href="duihua.html">
+                            <strong><img src="images/nav1.png" /></strong>
+                            <span>对话机器人</span>
+                        </a></dt>
+                        <dt><a href="zaixian.html">
+                            <strong><img src="images/nav2.png" /></strong>
+                            <span>在线客服系统</span>
+                        </a></dt>
+                        <dt><a href="duolun.html">
+                            <strong><img src="images/nav3.png" /></strong>
+                            <span>多轮对话</span>
+                        </a></dt>
+                        <dt><a href="shuju.html">
+                            <strong><img src="images/nav4.png" /></strong>
+                            <span>数据分析</span>
+                        </a></dt>
+                        <dt><a href="gongdan.html">
+                            <strong><img src="images/nav5.png" /></strong>
+                            <span>工单系统</span>
+                        </a></dt>
+                    </dl>
+                </li>
+                <li><a href="jishu.html">技术优势</a></li>
+                <li><a href="jiage.html">价格</a></li>
+                <li><a href="anli.html">案例</a></li>
+                <li><a href="yanshi.html">演示</a></li>
+                <li><a href="dongtai.html">动态</a></li>
+                <li><a href="guanyu.html">关于我们</a></li>
+            </ul>
+            <dl class="zc ov">
+                <dt><a href="zhuce.html">注册</a></dt>
+                <dd class="fl"><a href="denglu.html">登录机器人系统</a></dd>
+                <dd class="fr"><a href="denglu.html">登录在线客服系统</a></dd>
+            </dl>
+        </div>
+        <script>
+window.onbeforeunload = function(){
+    //刷新后页面自动回到顶部
+    document.documentElement.scrollTop = 0;  //ie下
+    document.body.scrollTop = 0;  //非ie
+}
+</script>
+        <script>
+$(document).ready(function () {
+    var navtop = $(".header").offset().top;
+    $(window).scroll(function () {
+        var t = $(window).scrollTop();
+        if (t > navtop) {
+            $(".header").addClass("bg");
+        } else {
+            $(".header").removeClass("bg");
+        }
+    })
+});
+</script>
+        <script>
+$(document).ready(function(){
+    $(".sav").click(function(){
+        $(".xia").toggleClass("dis")
+        $(".header").toggleClass("kk")
+    });
+    $(".xia p").click(function(){
+        $(".xia dl").toggleClass("dis")
+    });
+});
+</script>
+
+            <!--banner-->
+        <section class="updata_pas" style="padding:0.5em;width: 1200px;margin: 5em auto;">
+                <!--<div class="brand"><a href="../index.html">首页</a>/<a href="updata.html">新闻列表</a></div>-->
+            <ol class="brand breadcrumb">
+                <li><a href="index.html"><span style="color: #41C6E3;">首页</span></a> <span style="color: #ccc;">/</span> <a href="dongtai.html"><span style="color: #41C6E3;">新闻列表</span></a></li>
+                
+            </ol>
+            <h1 style="text-align:center;font-size: 36px;" class="updata_title">与时俱进的智能客服</h1>
+            <p style="text-align:center;margin:20px;">2018-08-03 15:06</p>
+            <div class="passage">
+            <p>作为一项在大规模知识处理、自然语言理解、知识管理、自动问答、推理等技术的基础上发展起来的行业应用，智能客服具有行业通用性，可为企业与海量客户之间的沟通建立一种基于自然语言的快捷有效的技术手段，助力企业显著提升服务效率、降低服务成本，有效改善客户体验、提高客户满意度。智能客服也为企业提供细粒度知识管理能力和精细化管理所需的统计分析信息，形成丰富多元的数据分析报表，筛选提取价值信息，全面提升客服品质，辅助企业进行实时准确的业务经营决策。智能客服还是企业内部服务部门的好帮手，为企业内部客户提供有效、便捷的贴身顾问服务及个性化信息服务，把员工从琐碎、重复、繁重的咨询工作中解脱出来。</p><p>智能客服系统告别了传统在线客服陈旧的工作模式，将人工智能技术应用于在线客服，通过自然语言理解客户提出的问题，自组织答案并预回答。人工客服只需一键发送，就能轻松完成客户服务，大幅提升了工作效率。在智能客服系统无法自动回复客户的问题时，可转人工处理。人工客服可以在线编辑知识库，供其他人工客服使用，或者经过审核后供智能客服系统自动使用。利用云技术，可为智能客服系统配置强大的知识库。</p><p>智能客服系统也提供了灵活有序的企业协同处理功能，借助灵活好用的工单系统，使整个企业都能参与客服问题的协同处理，客服不再孤立无援，企业的内部协作更高效更便捷。开放的工单系统还能与企业的其他系统对接，使客服更好地融入企业的运作流程。在降低成本的同时，提升客户服务。</p><p>智能客服系统具有全渠道客户一站式管理的能力，全面支持桌面网站、移动网站、QQ、微信、<a href="http://t.hexun.com/" target="_blank" style="color: rgb(72, 90, 144);">微博</a>、移动应用、电话、短信、邮件等全渠道接入方式，高效整合各类电子渠道资源，有效覆盖目标服务客户，并可嵌入所有营销路径，各渠道客户反馈可汇总至智能客服平台进行统一管理，大大提升了企业的客服效率。</p><p>智能客服能精准了解客户最关心的问题，找出客户特征与价值，挖掘产品和服务问题，辅助企业决策。智能客服能自动跟踪访客的访问轨迹，并以文字、表情、语音、图片、位置、微<a href="http://tv.hexun.com/" target="_blank" style="color: rgb(72, 90, 144);">视频</a>、自定义消息等富媒体形式实时交互；通过与知识库集成，自动回复常见问题。智能客服通过对客户的轨迹、位置、使用等多维度分析，聚焦高意向客户，并可采用多种互动方式，进行一对一个性化营销，实时激发客户的消费欲望。</p><p>智能客服系统还可依托大数据、人工智能等新技术，能够基于客户行为表现提前预测问题，并在客户发起咨询前主动触达客户。除了咨询投诉等基础服务，智能客服系统还可以作为智能助理，完成其他多种服务功能。</p><p>智能客服机器人能深度理解客户意图，改变客户对机器人客服不靠谱的印象。智能客服机器人全面优化其语义分析算法，既能寒暄卖萌，又能精确理解、回答客户的业务问题，在拉近企业与客户距离的同时，节省大量人工成本；快捷简单的知识库添加方式搭配智能学习技术可让知识库快速完善。智能客服机器人与在线客服系统完美融合，可在两种服务模式间无缝切换，删繁就简。</p><p>随着深度学习和神经网络等技术的不断发展，人工智能与高级机器学习能力将超常发展，智能客服系统将可以像人类一样学习，利用历史数据预测未来，并与时俱进，能越来越胜任人类助手的角色。</p><p>近年来，客服机器人的发展更是有目共睹的，目前已经发展得相对成熟的优秀客服机器人也已经不在少数，比如说上海八斗开发的奇智机器人。</p>
+            </div>
+        </section>
+
+                <!--fanye-->
+                
+
+                <!--免费试用-->
+            <div class="mbox mt ov">
+                <div class="title ov">
+                    <span>立即开通奇智机器人，免费试用全部功能</span>
+                    <p><b></b><a>free trial all features</a><b></b></p>
+                </div>
+                <div class="title01 ov">
+                    <span>立即开通奇智机器人<br />免费试用全部功能</span>
+                    <p><b></b><a>free trial all features</a><b></b></p>
+                </div>
+
+                <div class="sbox ov">
+                    <strong><img src="images/tel.jpg" /></strong>
+                    <p><input type="text" placeholder="请输入您的手机号..." id="phoneNum" /></p >
+                    <span><input type="button" value="免费试用"  class="freeUse"/></span>
+                </div>
+            </div>
+                <!--[if lt IE 9]>
+
+                <![endif]-->
+
+                <!--foot-->
+        <div class="footer ov">
+            <div class="foot ov">
+                <div class="logo fl"><img src="images/logo.png" /></div>
+                <div class="xw fl">
+                    <ul>
+                        <li><a href="https://weibo.com/p/1005055792483262/" target="_blank"><img src="images/fb03.png" /></a></li>
+                        <li class="on"><a><img src="images/fb02.png" /></a><p><img src="images/wx.jpg" /></p></li>
+                        <li><a href="https://shang.qq.com/wpa/qunwpa?idkey=c54b25c8520c54afb7d9125f4e1cd50e86c4d50ddff1dd92a4d060d3b1df6c4e"  alt="奇智机器人官方QQ群" title="官方QQ群: 476248184" target="_blank"><img src="images/fb01.png" /></a></li>
+                    </ul>
+                </div>
+                <ul class="lx fl">
+                    <li><strong><img src="images/f01.png" /></strong><p><a href="tel:400-604-5033" title="" style="color: white;">电话: 400-604-5033</a></p></li>
+                    <li><strong><img src="images/f02.png" /></strong><p>商务合作: market@chatbot.cn</p></li>
+                    <li><strong><img src="images/f03.png" /></strong><p>技术支持: support@chatbot.cn</p></li>
+                    <li><strong><img src="images/f04.png" /></strong><p>公司地址:上海市浦东新区祖冲之路1559号创意大厦7001</p></li>
+                </ul>
+                <dl class="nav fl">
+                    <dt><a href="duihua.html">产品</a><a href="jishu.html">技术优势</a><a href="jiage.html">价格</a><a href="anli.html">案例</a><a href="yanshi.html">演示</a><a href="dongtai.html">动态</a><a href="guanyu.html">关于我们</a></dt>
+                    <dd><span><a href="anli.html">客户案例</a></span><p><a href="anli.html?key=lkl"><img src="images/c01.png" /></a></p><p><a href="anli.html?key=ge"><img src="images/footer-ge.png" /></a></p><p><a href="anli.html?key=58"><img src="images/footer-58.png" /></a></p><p><a href="anli.html?key=zgcyh"><img src="images/footer-zgcyh.png" /></a></p></dd>
+                </dl>
+                <div class="bottom fl">
+                    <p>奇智机器人-专业的人机智能交互解决方案提供商</p>
+                    <span>Copyright@2017 上海八斗智能技术有限公司 | 沪ICP备17004486号-1|</span>
+                </div>
+            </div>
+        </div>
+<script>
+        $(".freeUse").click(function(){
+            window.open("https://cloud.chatbot.cn/cloud/register?phone="+$("#phoneNum").val())
+        })
+</script>
+<script type="text/javascript">
+                $(document).ready(function(){
+                    $(".footer .on").click(function(){
+                        $(".footer .on p").toggleClass("dis")
+                    });
+                });
+
+             $(document).ready(function() {
+                 // val()无参数是取值，有参数是设置
+                 // 为了更好的兼容性，将下面的val()设置与input中的placeholder的值设置相同
+                 $(".sbox p input").val("");
+                 textFill($('input.text1'));
+             });
+
+             function textFill(input) {
+                 var originalvalue = input.val();
+                 input.focus(function() {
+                     if ($.trim(input.val()) == originalvalue) {
+                         input.val('');
+                     }
+                 });
+                 input.blur(function() {
+                     if ($.trim(input.val()) == '') {
+                         input.val(originalvalue);
+                     }
+                 });
+             }
+</script>
+<script>
+$(document).ready(function(){
+    $(".footer .on").click(function(){
+        $(".footer .on p").toggleClass("dis")
+    });
+});
+// 从地址栏获取参数
+(function ($) {
+    $.getUrlParam = function (name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;
+    }
+})(jQuery);
+var currentKey = $.getUrlParam('key');
+
+if(currentKey =="58"){
+    $('.biao a').eq(2).addClass("on").siblings().removeClass('on')
+}else if(currentKey =="ge"){
+    $('.biao a').eq(3).addClass("on").siblings().removeClass('on')
+}else if(currentKey =="zgcyh"){
+    $(".tab01 ul li").eq(2).addClass("on").siblings().removeClass('on')
+}
+</script>
+<script src="./js/main.js" charset="utf-8"></script>
+<script src='http://cloud.chatbot.cn/cloud/robot/webjs/5b3c47952400008a1b1f05c3' language="JavaScript"></script>
+            <!--百度统计-->
+        <script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c1ca7e2ebb1260ee586994702dcb5f5c";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+            <!--百度统计/-->
+            <!--cnzz-->
+        <div style="display: none;">
+            <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+      document.write(unescape("%3Cspan id='cnzz_stat_icon_1256449100'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
+              "s95.cnzz.com/stat.php%3Fid%3D1256449100' type='text/javascript'%3E%3C/script%3E"));
+
+    </script>
+        </div>
+            <!--cnzz/-->
+</body>
+</html>

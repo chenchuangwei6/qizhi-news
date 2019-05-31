@@ -1,0 +1,100 @@
+@(list: List[News], total: Int, page: Int, isRecommended: Boolean)(implicit request: Request[AnyContent])
+
+@main("新闻列表", request) {
+<div class="row" style="margin-top: 15px;">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading">
+                <h4>新闻列表(@total)</h4>
+                <form id="form" action="/" style="float: right;margin-top: -30px;">
+                    <input id="look" type="checkbox" name="isRecommended" value="0"/>查看推荐新闻
+                    <input type="hidden" name="page" value="@{page}"/>
+                </form>
+            </div>
+            <div class="panel-body" style="padding-right: 0px;">
+
+            </div>
+            <!-- Table -->
+            <table class="table">
+                <thead>
+                <tr>
+                    <th class="col-md-2">标题</th>
+                    <th class="col-md-2">介绍</th>
+                    <th class="col-md-2">更新时间</th>
+                    <th class="col-md-2">创建时间</th>
+                    <th class="col-md-2">分类</th>
+                    <th class="col-md-2">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                @for(s <- list){
+                <tr>
+                    <td style="padding-top: 12px;">
+                        @s.title
+                    </td>
+                    <td>
+                        @s.intro
+                    </td>
+                    <td>
+                        @utils.DateTimeUtil.toString(s.updateTime, "yyyy-MM-dd HH:mm")
+                    </td>
+                    <td>
+                        @utils.DateTimeUtil.toString(s.createTime, "yyyy-MM-dd HH:mm")
+                    </td>
+                    <td>
+                    @if(s.category.getOrElse("") == "industry"){
+                        行业新闻
+                    } else {
+                        @if(s.category.getOrElse("") == "productDynamic"){
+                            产品动态
+                        } else {
+                            @if(s.category.getOrElse("") == "customerCase"){
+                                客户案例
+                            } else {
+                                其他
+                            }
+                        }
+                    }
+                    </td>
+                    <td>
+                        <a  href="/edit?_id=@s._id&isRecommended=@{isRecommended}&category=@{s.category.getOrElse("default")}&page=@{page}&isRecommendedEdit=@{s.isRecommended}" class="btn btn-default btn-xs" >编辑</a>
+                        <a  href="/remove?_id=@s._id&isRecommended=@{isRecommended}" class="btn btn-default btn-xs">删除</a>
+                        @if(!s.isRecommended.getOrElse(false)){
+                            <a  href="/recommended?_id=@s._id&isRecommendedc=true&page=@{page}&isRecommended=@{isRecommended}" class="btn btn-default btn-xs">设为推荐</a>
+                        }
+                        @if(s.isRecommended.getOrElse(false)){
+                            <a  href="/recommended?_id=@s._id&isRecommendedc=false&page=@{page}&isRecommended=@{isRecommended}" class="btn btn-default btn-xs" style="color: red;">取消推荐</a>
+                        }
+                    </td>
+                </tr>
+                }
+                </tbody>
+            </table>
+            <ul class="pagination  pagination-sm pull-right" style="margin-top:0px; margin-right:0px; margin-bottom:0px;">
+                <li><a href="/?page=@{page - 1}&isRecommended=@{isRecommended}" @if(page <= 1){class="btn disabled"}>&laquo; 上一页</a></li>
+                <li><a href="javascript:void(0);">@if(list.nonEmpty){ @{page + "/" + math.ceil(total/15.0).toInt + s"($total)"} }else{-}</a></li>
+                <li><a href="/?page=@{page + 1}&isRecommended=@{isRecommended}" @if(page >= math.ceil(total/15.0).toInt){class="btn disabled"}>下一页 &raquo;</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+}
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        var i = @isRecommended
+        if(i){
+            $("#look").attr('checked',true);
+        }
+        $("#look").click(function(){
+            if($(this).is(':checked')){
+                $(this).val(1);
+            }else {
+                $(this).val(0);
+            }
+            $("#form").submit();
+        });
+    });
+</script>

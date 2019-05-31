@@ -1,0 +1,18 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+GET     /login                      controllers.NewsController.login
+GET     /doLogin                    controllers.NewsController.doLogin(password: String)
+GET     /                           controllers.NewsController.index(page: Int ?= 1, isRecommended: Boolean ?= false)
+GET     /add                        controllers.NewsController.add
+GET     /edit                       controllers.NewsController.edit(_id: String, isRecommended: Boolean, category: String ?="default", page: Int, isRecommendedEdit :Boolean ?=false)
+POST    /add                        controllers.NewsController.doAdd
+GET     /generateToFile             controllers.NewsController.generateToFile
+GET     /remove                     controllers.NewsController.remove(_id: String, isRecommended: Boolean ?=false)
+GET     /recommended                controllers.NewsController.recommended(_id: String, isRecommendedc: Boolean, page: Int ?=1, isRecommended: Boolean?=false)
+GET     /msg                        controllers.NewsController.msg(msg: String)
+GET     /newsList                   controllers.NewsController.newList
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)

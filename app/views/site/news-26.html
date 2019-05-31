@@ -1,0 +1,290 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>实体机器人是如何工作的？-奇智机器人</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css" />
+        <link href="css/new.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    </head>
+
+    <body>
+            <!--head-->
+            <div class="header bg01">
+            <div class="head">
+                <div class="logo fl"><a href="index.html"><img src="images/logo.png" /></a></div>
+                <div class="deng fr">
+                    <span><a>登录</a>
+                        <ul>
+                            <li><a href="javascript:;" class="loginRobot">登录机器人系统</a></li>
+                            <li><a href="javascript:;" class="loginKf">登录在线客服系统</a></li>
+                        </ul>
+                    </span>
+                    <span><a href="javascript:;" class="reg">注册</a></span>
+                </div>
+                <ul class="nav fr">
+                    <li><a href="index.html">首页</a><b></b></li>
+                    <li><a>产品&nbsp;&nbsp;<i><img src="images/xia.png" /></i><em><img src="images/xia01.png" /></em><label><img src="images/xia02.png" /></label></a><b></b>
+                        <dl>
+                            <dt><a href="duihua.html">
+                                <strong><img src="images/nav1.png" /></strong>
+                                <span>对话机器人</span>
+                            </a></dt>
+                            <dt><a href="zaixian.html">
+                                <strong><img src="images/nav2.png" /></strong>
+                                <span>在线客服系统</span>
+                            </a></dt>
+                            <dt><a href="duolun.html">
+                                <strong><img src="images/nav3.png" /></strong>
+                                <span>多轮对话</span>
+                            </a></dt>
+                            <dt><a href="shuju.html">
+                                <strong><img src="images/nav4.png" /></strong>
+                                <span>数据分析</span>
+                            </a></dt>
+                            <dt><a href="gongdan.html">
+                                <strong><img src="images/nav5.png" /></strong>
+                                <span>工单系统</span>
+                            </a></dt>
+                        </dl>
+                    </li>
+                    <li><a href="jishu.html">技术优势</a><b></b></li>
+                    <li><a href="jiage.html">价格</a><b></b></li>
+                    <li><a href="anli.html">案例</a><b></b></li>
+                    <li><a href="yanshi.html">演示</a><b></b></li>
+                    <li class="on"><a href="dongtai.html">动态</a><b></b></li>
+                    <li><a href="guanyu.html">关于我们</a><b></b></li>
+                </ul>
+
+                <div class="sav fr"><span><img src="images/nav01.png" /></span><a><img src="images/nav01.png" /></a></div>
+                <div class="zcs fr"><a href="javascript:;" class="reg">注册</a></div>
+            </div>
+        </div>
+
+            <!--下拉-->
+        <div class="xia ov">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><p>产品&nbsp;&nbsp;&gt;</p>
+                    <dl class="dis">
+                        <dt><a href="duihua.html">
+                            <strong><img src="images/nav1.png" /></strong>
+                            <span>对话机器人</span>
+                        </a></dt>
+                        <dt><a href="zaixian.html">
+                            <strong><img src="images/nav2.png" /></strong>
+                            <span>在线客服系统</span>
+                        </a></dt>
+                        <dt><a href="duolun.html">
+                            <strong><img src="images/nav3.png" /></strong>
+                            <span>多轮对话</span>
+                        </a></dt>
+                        <dt><a href="shuju.html">
+                            <strong><img src="images/nav4.png" /></strong>
+                            <span>数据分析</span>
+                        </a></dt>
+                        <dt><a href="gongdan.html">
+                            <strong><img src="images/nav5.png" /></strong>
+                            <span>工单系统</span>
+                        </a></dt>
+                    </dl>
+                </li>
+                <li><a href="jishu.html">技术优势</a></li>
+                <li><a href="jiage.html">价格</a></li>
+                <li><a href="anli.html">案例</a></li>
+                <li><a href="yanshi.html">演示</a></li>
+                <li><a href="dongtai.html">动态</a></li>
+                <li><a href="guanyu.html">关于我们</a></li>
+            </ul>
+            <dl class="zc ov">
+                <dt><a href="zhuce.html">注册</a></dt>
+                <dd class="fl"><a href="denglu.html">登录机器人系统</a></dd>
+                <dd class="fr"><a href="denglu.html">登录在线客服系统</a></dd>
+            </dl>
+        </div>
+        <script>
+window.onbeforeunload = function(){
+    //刷新后页面自动回到顶部
+    document.documentElement.scrollTop = 0;  //ie下
+    document.body.scrollTop = 0;  //非ie
+}
+</script>
+        <script>
+$(document).ready(function () {
+    var navtop = $(".header").offset().top;
+    $(window).scroll(function () {
+        var t = $(window).scrollTop();
+        if (t > navtop) {
+            $(".header").addClass("bg");
+        } else {
+            $(".header").removeClass("bg");
+        }
+    })
+});
+</script>
+        <script>
+$(document).ready(function(){
+    $(".sav").click(function(){
+        $(".xia").toggleClass("dis")
+        $(".header").toggleClass("kk")
+    });
+    $(".xia p").click(function(){
+        $(".xia dl").toggleClass("dis")
+    });
+});
+</script>
+
+            <!--banner-->
+        <section class="updata_pas" style="padding:0.5em;width: 1200px;margin: 5em auto;">
+                <!--<div class="brand"><a href="../index.html">首页</a>/<a href="updata.html">新闻列表</a></div>-->
+            <ol class="brand breadcrumb">
+                <li><a href="index.html"><span style="color: #41C6E3;">首页</span></a> <span style="color: #ccc;">/</span> <a href="dongtai.html"><span style="color: #41C6E3;">新闻列表</span></a></li>
+                
+            </ol>
+            <h1 style="text-align:center;font-size: 36px;" class="updata_title">实体机器人是如何工作的？</h1>
+            <p style="text-align:center;margin:20px;">2018-08-03 15:05</p>
+            <div class="passage">
+            <p>英语里“机器人”(Robot)这个术语来自于捷克语单词robota，通常译作“强制劳动者”。用它来描述大多数机器人是十分贴切的。世界上的机器人大多用来从事繁重的重复性制造工作。它们负责那些对人类来说非常困难、危险或枯燥的任务。</p><p><br></p><p>最常见的制造类机器人是机器臂</p><p><br></p><p>一部典型的机器臂由七个金属部件构成，它们是用六个关节接起来的。计算机将旋转与每个关节分别相连的步进式马达，以便控制机器人(某些大型机器臂使用液压或气动系统)。</p><p><br></p><p>与普通马达不同，步进式马达会以增量方式精确移动。这使计算机可以精确地移动机器臂，使机器臂不断重复完全相同的动作。机器人利用运动传感器来确保自己完全按正确的量移动。</p><p><br></p><p>这种带有六个关节的工业机器人与人类的手臂极为相似，它具有相当于肩膀、肘部和腕部的部位。它的“肩膀”通常安装在一个固定的基座结构(而不是移动的身体)上。这种类型的机器人有六个自由度，也就是说，它能向六个不同的方向转动。与之相比，人的手臂有七个自由度。</p><p><br></p><p>一个六轴工业机器人的关节</p><p><br></p><p>人类手臂的作用是将手移动到不同的位置。类似地，机器臂的作用则是移动末端执行器。您可以在机器臂上安装适用于特定应用场景的各种末端执行器。有一种常见的末端执行器能抓握并移动不同的物品，它是人手的简化版本。</p><p><br></p><p>解析：机器人是如何工作的</p><p>机器手往往有内置的压力传感器，用来将机器人抓握某一特定物体时的力度告诉计算机。这使机器人手中的物体不致掉落或被挤破。其他末端执行器还包括喷灯、钻头和喷漆器。</p><p><br></p><p>工业机器人专门用来在受控环境下反复执行完全相同的工作。例如，某部机器人可能会负责给装配线上传送的花生酱罐子拧上盖子。为了教机器人如何做这项工作，程序员会用一只手持控制器来引导机器臂完成整套动作。机器人将动作序列准确地存储在内存中，此后每当装配线上有新的罐子传送过来时，它就会反复地做这套动作。</p><p><br></p><p>大多数工业机器人在汽车装配线上工作，负责组装汽车。在进行大量的此类工作时，机器人的效率比人类高得多，因为它们非常精确。无论它们已经工作了多少小时，它们仍能在相同的位置钻孔，用相同的力度拧螺钉。制造类机器人在计算机产业中也发挥着十分重要的作用。它们无比精确的巧手可以将一块极小的微型芯片组装起来。</p><p><br></p><p>机器臂的制造和编程难度相对较低，因为它们只在一个有限的区域内工作。如果您要把机器人送到广阔的外部世界，事情就变得有些复杂了。</p><p><br></p><p>首要的难题是为机器人提供一个可行的运动系统。如果机器人只需要在平地上移动，轮子或轨道往往是最好的选择。如果轮子和轨道足够宽，它们还适用于较为崎岖的地形。但是机器人的设计者往往希望使用腿状结构，因为它们的适应性更强。制造有腿的机器人还有助于使研究人员了解自然运动学的知识，这在生物研究领域是有益的实践。</p><p><br></p><p>机器人的腿通常是在液压或气动活塞的驱动下前后移动的。各个活塞连接在不同的腿部部件上，就像不同骨骼上附着的肌肉。若要使所有这些活塞都能以正确的方式协同工作，这无疑是一个难题。在婴儿阶段，人的大脑必须弄清哪些肌肉需要同时收缩才能使得在直立行走时不致摔倒。同理，机器人的设计师必须弄清与行走有关的正确活塞运动组合，并将这一信息编入机器人的计算机中。许多移动型机器人都有一个内置平衡系统(如一组陀螺仪)，该系统会告诉计算机何时需要校正机器人的动作。</p><p><br></p><p>波士顿动力最新升级版的Atlas人形机器人</p><p><br></p><p>两足行走的运动方式本身是不稳定的，因此在机器人的制造中实现难度极大。为了设计出行走更稳的机器人，设计师们常会将眼光投向动物界，尤其是昆虫。昆虫有六条腿，它们往往具有超凡的平衡能力，对许多不同的地形都能适应自如。</p><p><br></p><p>某些移动型机器人是远程控制的，人类可以指挥它们在特定的时间从事特定的工作。遥控装置可以使用连接线、无线电或红外信号与机器人通信。远程机器人常被称为傀儡机器人，它们在探索充满危险或人类无法进入的环境(如深海或火山内部)时非常有用。有些机器人只是部分受到遥控。例如，操作人员可能会指示机器人到达某个特定的地点，但不会为它指引路线，而是任由它找到自己的路。</p><p><br></p><p>NASA研发可远程控制的太空机器人R2</p><p><br></p><p>自动机器人可以自主行动，无需依赖于任何控制人员。其基本原理是对机器人进行编程，使之能以某种方式对外界刺激做出反应。极其简单的碰撞反应机器人可以很好地诠释这一原理。</p><p><br></p><p>这种机器人有一个用来检查障碍物的碰撞传感器。当您启动机器人后，它大体上是沿一条直线曲折行进的。当它碰到障碍物时，冲击力会作用在它的碰撞传感器上。每次发生碰撞时，机器人的程序会指示它后退，再向右转，然后继续前进。按照这种方法，机器人只要遇到障碍物就会改变它的方向。</p><p><br></p><p>高级机器人会以更精巧的方式运用这一原理。机器人专家们将开发新的程序和传感系统，以便制造出智能程度更高、感知能力更强的机器人。如今的机器人可以在各种环境中大展身手。</p><p><br></p><p>较为简单的移动型机器人使用红外或超声波传感器来感知障碍物。这些传感器的工作方式类似于动物的回声定位系统：机器人发出一个声音信号(或一束红外光线)，并检测信号的反射情况。机器人会根据信号反射所用的时间计算出它与障碍物之间的距离。</p><p><br></p><p>较高级的机器人利用立体视觉来观察周围的世界。两个摄像头可以为机器人提供深度感知，而图像识别软件则使机器人有能力确定物体的位置，并辨认各种物体。机器人还可以使用麦克风和气味传感器来分析周围的环境。</p><p><br></p><p>某些自动机器人只能在它们熟悉的有限环境中工作。例如，割草机器人依靠埋在地下的界标确定草场的范围。而用来清洁办公室的机器人则需要建筑物的地图才能在不同的地点之间移动。</p><p><br></p><p>较高级的机器人可以分析和适应不熟悉的环境，甚至能适应地形崎岖的地区。这些机器人可以将特定的地形模式与特定的动作相关联。例如，一个漫游车机器人会利用它的视觉传感器生成前方地面的地图。如果地图上显示的是崎岖不平的地形模式，机器人会知道它该走另一条道。这种系统对于在其他行星上工作的探索型机器人是非常有用的。</p><p><br></p><p>有一套备选的机器人设计方案采用了较为松散的结构，引入了随机化因素。当这种机器人被卡住时，它会向各个方向移动附肢，直到它的动作产生效果为止。它通过力传感器和传动装置紧密协作完成任务，而不是由计算机通过程序指导一切。这和蚂蚁尝试绕过障碍物时有相似之处：蚂蚁在需要通过障碍物时似乎不会当机立断，而是不断尝试各种做法，直到绕过障碍物为止。</p>
+            </div>
+        </section>
+
+                <!--fanye-->
+                
+
+                <!--免费试用-->
+            <div class="mbox mt ov">
+                <div class="title ov">
+                    <span>立即开通奇智机器人，免费试用全部功能</span>
+                    <p><b></b><a>free trial all features</a><b></b></p>
+                </div>
+                <div class="title01 ov">
+                    <span>立即开通奇智机器人<br />免费试用全部功能</span>
+                    <p><b></b><a>free trial all features</a><b></b></p>
+                </div>
+
+                <div class="sbox ov">
+                    <strong><img src="images/tel.jpg" /></strong>
+                    <p><input type="text" placeholder="请输入您的手机号..." id="phoneNum" /></p >
+                    <span><input type="button" value="免费试用"  class="freeUse"/></span>
+                </div>
+            </div>
+                <!--[if lt IE 9]>
+
+                <![endif]-->
+
+                <!--foot-->
+        <div class="footer ov">
+            <div class="foot ov">
+                <div class="logo fl"><img src="images/logo.png" /></div>
+                <div class="xw fl">
+                    <ul>
+                        <li><a href="https://weibo.com/p/1005055792483262/" target="_blank"><img src="images/fb03.png" /></a></li>
+                        <li class="on"><a><img src="images/fb02.png" /></a><p><img src="images/wx.jpg" /></p></li>
+                        <li><a href="https://shang.qq.com/wpa/qunwpa?idkey=c54b25c8520c54afb7d9125f4e1cd50e86c4d50ddff1dd92a4d060d3b1df6c4e"  alt="奇智机器人官方QQ群" title="官方QQ群: 476248184" target="_blank"><img src="images/fb01.png" /></a></li>
+                    </ul>
+                </div>
+                <ul class="lx fl">
+                    <li><strong><img src="images/f01.png" /></strong><p><a href="tel:400-604-5033" title="" style="color: white;">电话: 400-604-5033</a></p></li>
+                    <li><strong><img src="images/f02.png" /></strong><p>商务合作: market@chatbot.cn</p></li>
+                    <li><strong><img src="images/f03.png" /></strong><p>技术支持: support@chatbot.cn</p></li>
+                    <li><strong><img src="images/f04.png" /></strong><p>公司地址:上海市浦东新区祖冲之路1559号创意大厦7001</p></li>
+                </ul>
+                <dl class="nav fl">
+                    <dt><a href="duihua.html">产品</a><a href="jishu.html">技术优势</a><a href="jiage.html">价格</a><a href="anli.html">案例</a><a href="yanshi.html">演示</a><a href="dongtai.html">动态</a><a href="guanyu.html">关于我们</a></dt>
+                    <dd><span><a href="anli.html">客户案例</a></span><p><a href="anli.html?key=lkl"><img src="images/c01.png" /></a></p><p><a href="anli.html?key=ge"><img src="images/footer-ge.png" /></a></p><p><a href="anli.html?key=58"><img src="images/footer-58.png" /></a></p><p><a href="anli.html?key=zgcyh"><img src="images/footer-zgcyh.png" /></a></p></dd>
+                </dl>
+                <div class="bottom fl">
+                    <p>奇智机器人-专业的人机智能交互解决方案提供商</p>
+                    <span>Copyright@2017 上海八斗智能技术有限公司 | 沪ICP备17004486号-1|</span>
+                </div>
+            </div>
+        </div>
+<script>
+        $(".freeUse").click(function(){
+            window.open("https://cloud.chatbot.cn/cloud/register?phone="+$("#phoneNum").val())
+        })
+</script>
+<script type="text/javascript">
+                $(document).ready(function(){
+                    $(".footer .on").click(function(){
+                        $(".footer .on p").toggleClass("dis")
+                    });
+                });
+
+             $(document).ready(function() {
+                 // val()无参数是取值，有参数是设置
+                 // 为了更好的兼容性，将下面的val()设置与input中的placeholder的值设置相同
+                 $(".sbox p input").val("");
+                 textFill($('input.text1'));
+             });
+
+             function textFill(input) {
+                 var originalvalue = input.val();
+                 input.focus(function() {
+                     if ($.trim(input.val()) == originalvalue) {
+                         input.val('');
+                     }
+                 });
+                 input.blur(function() {
+                     if ($.trim(input.val()) == '') {
+                         input.val(originalvalue);
+                     }
+                 });
+             }
+</script>
+<script>
+$(document).ready(function(){
+    $(".footer .on").click(function(){
+        $(".footer .on p").toggleClass("dis")
+    });
+});
+// 从地址栏获取参数
+(function ($) {
+    $.getUrlParam = function (name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;
+    }
+})(jQuery);
+var currentKey = $.getUrlParam('key');
+
+if(currentKey =="58"){
+    $('.biao a').eq(2).addClass("on").siblings().removeClass('on')
+}else if(currentKey =="ge"){
+    $('.biao a').eq(3).addClass("on").siblings().removeClass('on')
+}else if(currentKey =="zgcyh"){
+    $(".tab01 ul li").eq(2).addClass("on").siblings().removeClass('on')
+}
+</script>
+<script src="./js/main.js" charset="utf-8"></script>
+<script src='http://cloud.chatbot.cn/cloud/robot/webjs/5b3c47952400008a1b1f05c3' language="JavaScript"></script>
+            <!--百度统计-->
+        <script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c1ca7e2ebb1260ee586994702dcb5f5c";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+            <!--百度统计/-->
+            <!--cnzz-->
+        <div style="display: none;">
+            <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+      document.write(unescape("%3Cspan id='cnzz_stat_icon_1256449100'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
+              "s95.cnzz.com/stat.php%3Fid%3D1256449100' type='text/javascript'%3E%3C/script%3E"));
+
+    </script>
+        </div>
+            <!--cnzz/-->
+</body>
+</html>

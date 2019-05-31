@@ -1,0 +1,19 @@
+@(msg: String)(implicit request: Request[AnyContent])
+
+@main("提示消息", request) {
+<div class="row" style="margin-top: 100px;">
+    <div class="col-md-offset-4 col-md-4">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4>系统提示</h4></div>
+            <div class="panel-body" style="padding-right: 0px;">
+                @msg
+            </div>
+        </div>
+    </div>
+</div>
+
+}
+
+<script type="text/javascript" charset="utf-8">
+</script>

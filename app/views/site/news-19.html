@@ -1,0 +1,290 @@
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head lang="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Cache-Control" content="no-cache" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <title>走进智能时代的机器人-奇智机器人</title>
+        <link href="css/css.css" rel="stylesheet" type="text/css" />
+        <link href="css/new.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="js/jquery.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.SuperSlide.js"></script>
+    </head>
+
+    <body>
+            <!--head-->
+            <div class="header bg01">
+            <div class="head">
+                <div class="logo fl"><a href="index.html"><img src="images/logo.png" /></a></div>
+                <div class="deng fr">
+                    <span><a>登录</a>
+                        <ul>
+                            <li><a href="javascript:;" class="loginRobot">登录机器人系统</a></li>
+                            <li><a href="javascript:;" class="loginKf">登录在线客服系统</a></li>
+                        </ul>
+                    </span>
+                    <span><a href="javascript:;" class="reg">注册</a></span>
+                </div>
+                <ul class="nav fr">
+                    <li><a href="index.html">首页</a><b></b></li>
+                    <li><a>产品&nbsp;&nbsp;<i><img src="images/xia.png" /></i><em><img src="images/xia01.png" /></em><label><img src="images/xia02.png" /></label></a><b></b>
+                        <dl>
+                            <dt><a href="duihua.html">
+                                <strong><img src="images/nav1.png" /></strong>
+                                <span>对话机器人</span>
+                            </a></dt>
+                            <dt><a href="zaixian.html">
+                                <strong><img src="images/nav2.png" /></strong>
+                                <span>在线客服系统</span>
+                            </a></dt>
+                            <dt><a href="duolun.html">
+                                <strong><img src="images/nav3.png" /></strong>
+                                <span>多轮对话</span>
+                            </a></dt>
+                            <dt><a href="shuju.html">
+                                <strong><img src="images/nav4.png" /></strong>
+                                <span>数据分析</span>
+                            </a></dt>
+                            <dt><a href="gongdan.html">
+                                <strong><img src="images/nav5.png" /></strong>
+                                <span>工单系统</span>
+                            </a></dt>
+                        </dl>
+                    </li>
+                    <li><a href="jishu.html">技术优势</a><b></b></li>
+                    <li><a href="jiage.html">价格</a><b></b></li>
+                    <li><a href="anli.html">案例</a><b></b></li>
+                    <li><a href="yanshi.html">演示</a><b></b></li>
+                    <li class="on"><a href="dongtai.html">动态</a><b></b></li>
+                    <li><a href="guanyu.html">关于我们</a><b></b></li>
+                </ul>
+
+                <div class="sav fr"><span><img src="images/nav01.png" /></span><a><img src="images/nav01.png" /></a></div>
+                <div class="zcs fr"><a href="javascript:;" class="reg">注册</a></div>
+            </div>
+        </div>
+
+            <!--下拉-->
+        <div class="xia ov">
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><p>产品&nbsp;&nbsp;&gt;</p>
+                    <dl class="dis">
+                        <dt><a href="duihua.html">
+                            <strong><img src="images/nav1.png" /></strong>
+                            <span>对话机器人</span>
+                        </a></dt>
+                        <dt><a href="zaixian.html">
+                            <strong><img src="images/nav2.png" /></strong>
+                            <span>在线客服系统</span>
+                        </a></dt>
+                        <dt><a href="duolun.html">
+                            <strong><img src="images/nav3.png" /></strong>
+                            <span>多轮对话</span>
+                        </a></dt>
+                        <dt><a href="shuju.html">
+                            <strong><img src="images/nav4.png" /></strong>
+                            <span>数据分析</span>
+                        </a></dt>
+                        <dt><a href="gongdan.html">
+                            <strong><img src="images/nav5.png" /></strong>
+                            <span>工单系统</span>
+                        </a></dt>
+                    </dl>
+                </li>
+                <li><a href="jishu.html">技术优势</a></li>
+                <li><a href="jiage.html">价格</a></li>
+                <li><a href="anli.html">案例</a></li>
+                <li><a href="yanshi.html">演示</a></li>
+                <li><a href="dongtai.html">动态</a></li>
+                <li><a href="guanyu.html">关于我们</a></li>
+            </ul>
+            <dl class="zc ov">
+                <dt><a href="zhuce.html">注册</a></dt>
+                <dd class="fl"><a href="denglu.html">登录机器人系统</a></dd>
+                <dd class="fr"><a href="denglu.html">登录在线客服系统</a></dd>
+            </dl>
+        </div>
+        <script>
+window.onbeforeunload = function(){
+    //刷新后页面自动回到顶部
+    document.documentElement.scrollTop = 0;  //ie下
+    document.body.scrollTop = 0;  //非ie
+}
+</script>
+        <script>
+$(document).ready(function () {
+    var navtop = $(".header").offset().top;
+    $(window).scroll(function () {
+        var t = $(window).scrollTop();
+        if (t > navtop) {
+            $(".header").addClass("bg");
+        } else {
+            $(".header").removeClass("bg");
+        }
+    })
+});
+</script>
+        <script>
+$(document).ready(function(){
+    $(".sav").click(function(){
+        $(".xia").toggleClass("dis")
+        $(".header").toggleClass("kk")
+    });
+    $(".xia p").click(function(){
+        $(".xia dl").toggleClass("dis")
+    });
+});
+</script>
+
+            <!--banner-->
+        <section class="updata_pas" style="padding:0.5em;width: 1200px;margin: 5em auto;">
+                <!--<div class="brand"><a href="../index.html">首页</a>/<a href="updata.html">新闻列表</a></div>-->
+            <ol class="brand breadcrumb">
+                <li><a href="index.html"><span style="color: #41C6E3;">首页</span></a> <span style="color: #ccc;">/</span> <a href="dongtai.html"><span style="color: #41C6E3;">新闻列表</span></a></li>
+                
+            </ol>
+            <h1 style="text-align:center;font-size: 36px;" class="updata_title">走进智能时代的机器人</h1>
+            <p style="text-align:center;margin:20px;">2018-08-03 10:42</p>
+            <div class="passage">
+            <p>智能化时代，机器人正逐渐融入人们的生活。23日至27日，为期5天的2017世界机器人大会在北京亦庄举行。2015年，我国首次举办机器人国际大会，这是我国第三次举办机器人国际会议。这次亮相的机器人有何特点，与会专家如何看待机器人技术创新和产业发展方向？</p><p>“机器人总动员”，中国方队成重要力量</p><p>机器人博览会上，来自世界各国的顶尖机器人悉数亮相，可谓一场“机器人总动员”。在种类丰富的机器人中，中国方队十分耀眼。</p><p>右手托球，双眼紧盯篮筐，瞄准、出手！“进了，进了！”现场观众的喝彩和掌声送给的是一个穿着红色运动服的“大块头”——姚明高仿真投篮机器人。</p><p>姚明高仿真投篮机器人由我国四川一家公司研发，根据真人1∶1比例建模设计。电子科技大学荷福研究院副院长骆德渊介绍，该机器人投篮命中率高，是因为它有着精准的视觉定位系统与高精度轨迹跟踪算法，投篮动作能够根据接收的图像信号做出相应的调整。</p><p>一款名为“天玑”的骨科手术机器人也引来了不少观众驻足参观。该机器人由北京一家医疗科技公司研发，是世界上唯一能够开展四肢、骨盆骨折以及脊柱全节段手术的骨科机器人，其精度达到了亚毫米级，能够完成传统医疗手术模式下非常危险的手术。据介绍，目前该骨科机器人已在包括北京积水潭医院在内的全国不同层级医院应用，累计完成了3200余例机器人辅助骨科手术，在同类型机器人中达到了世界领先水平。</p><p>在无人机展区，京东集团的导航机器人、穿梭车以及无人车等展示了智慧物流能力。京东X事业部首席科学家李大鹏介绍，这些无人机配备了先进的智能识别系统，能与物流系统实现无缝对接，从而提高物流价值链的效率，让边远山区同样能享受到快捷的物流服务。</p><p>近年来，世界范围内机器人产业迅速发展，我国也在工业机器人、服务机器人和特种机器人等领域不断创新，成为世界机器人产业的重要力量。</p><p>中国为全球机器人产业增长提供动力支持</p><p>根据国际机器人联合会统计分析，2016年全球机器人产业规模首次突破200亿美元，同比增长14.5%，预计2017年将继续保持较高速度增长。</p><p>在本次大会上，中国电子学会发布的《中国机器人产业发展报告（2017年）》显示，我国工业机器人市场已连续5年成为全球第一大应用市场，我国机器人市场进入高速增长期，中国市场的持续开拓还为全球机器人产业增长提供了动力支持。</p><p>机器人产业的深入发展，得益于其应用场景的不断拓展。与会专家表示，机器人已经从单一的劳动工具和设备逐步上升为人类的工作助手和生活伙伴，未来将在家庭生活、医疗、金融、交通、物流等方面扮演越来越重要的角色。</p><p>本次大会上，人工智能、物联网、新材料等前沿技术的综合运用成为研讨的焦点。专家表示，机器人技术将呈现智能化、网络化和定制化的趋势，人工智能、仿人仿生将成为重要方向。</p><p>我国正从机器人应用大国转为创新大国</p><p>当前，世界主要国家都发布了促进机器人技术和产业发展的战略计划。“中国制造2025”明确将机器人作为重点发展领域后，近年来中国陆续出台《机器人产业发展规划（2016—2020）》《新一代人工智能发展规划》等政策，国内机器人产业正在积极打造面向全球的机器人技术和产业生态体系。</p><p>北京市经济和信息化委员会主任张伯旭认为，世界机器人产业格局正在发生三大深刻变革：机器人由硬竞争转向软竞争，软件系统与人工智能等技术的结合成为未来机器人竞争的关键；由已知领域应用的竞争转向未知领域应用的竞争，各种颠覆性技术将体现在未知领域应用的爆发式增长和大量潜在的新产业、新业态的衍生方面；由产品竞争转向生态竞争，未来市场竞争将超越产业企业界限。</p><p>我国是智能机器人需求大国，但我国机器人产业总体处于行业的低端。自主知名品牌缺乏，在关键零部件和核心系统上还依赖国外，在技术研发方面与先进国家还有不少差距。近年来，随着我国加大技术攻关，在很多关键技术和零部件上已经取得不少突破，在智能互联时代，我国机器人产业发展也迎来了赶超的机遇。</p><p>新松机器人自动化股份有限公司总裁曲道奎说，国外机器人公司比中国企业多了几十年经验，但现在机器人走到新的发展阶段，谁也不知道未来机器人怎么发展，这恰恰是中国机器人产业赶超的机会。</p>
+            </div>
+        </section>
+
+                <!--fanye-->
+                
+
+                <!--免费试用-->
+            <div class="mbox mt ov">
+                <div class="title ov">
+                    <span>立即开通奇智机器人，免费试用全部功能</span>
+                    <p><b></b><a>free trial all features</a><b></b></p>
+                </div>
+                <div class="title01 ov">
+                    <span>立即开通奇智机器人<br />免费试用全部功能</span>
+                    <p><b></b><a>free trial all features</a><b></b></p>
+                </div>
+
+                <div class="sbox ov">
+                    <strong><img src="images/tel.jpg" /></strong>
+                    <p><input type="text" placeholder="请输入您的手机号..." id="phoneNum" /></p >
+                    <span><input type="button" value="免费试用"  class="freeUse"/></span>
+                </div>
+            </div>
+                <!--[if lt IE 9]>
+
+                <![endif]-->
+
+                <!--foot-->
+        <div class="footer ov">
+            <div class="foot ov">
+                <div class="logo fl"><img src="images/logo.png" /></div>
+                <div class="xw fl">
+                    <ul>
+                        <li><a href="https://weibo.com/p/1005055792483262/" target="_blank"><img src="images/fb03.png" /></a></li>
+                        <li class="on"><a><img src="images/fb02.png" /></a><p><img src="images/wx.jpg" /></p></li>
+                        <li><a href="https://shang.qq.com/wpa/qunwpa?idkey=c54b25c8520c54afb7d9125f4e1cd50e86c4d50ddff1dd92a4d060d3b1df6c4e"  alt="奇智机器人官方QQ群" title="官方QQ群: 476248184" target="_blank"><img src="images/fb01.png" /></a></li>
+                    </ul>
+                </div>
+                <ul class="lx fl">
+                    <li><strong><img src="images/f01.png" /></strong><p><a href="tel:400-604-5033" title="" style="color: white;">电话: 400-604-5033</a></p></li>
+                    <li><strong><img src="images/f02.png" /></strong><p>商务合作: market@chatbot.cn</p></li>
+                    <li><strong><img src="images/f03.png" /></strong><p>技术支持: support@chatbot.cn</p></li>
+                    <li><strong><img src="images/f04.png" /></strong><p>公司地址:上海市浦东新区祖冲之路1559号创意大厦7001</p></li>
+                </ul>
+                <dl class="nav fl">
+                    <dt><a href="duihua.html">产品</a><a href="jishu.html">技术优势</a><a href="jiage.html">价格</a><a href="anli.html">案例</a><a href="yanshi.html">演示</a><a href="dongtai.html">动态</a><a href="guanyu.html">关于我们</a></dt>
+                    <dd><span><a href="anli.html">客户案例</a></span><p><a href="anli.html?key=lkl"><img src="images/c01.png" /></a></p><p><a href="anli.html?key=ge"><img src="images/footer-ge.png" /></a></p><p><a href="anli.html?key=58"><img src="images/footer-58.png" /></a></p><p><a href="anli.html?key=zgcyh"><img src="images/footer-zgcyh.png" /></a></p></dd>
+                </dl>
+                <div class="bottom fl">
+                    <p>奇智机器人-专业的人机智能交互解决方案提供商</p>
+                    <span>Copyright@2017 上海八斗智能技术有限公司 | 沪ICP备17004486号-1|</span>
+                </div>
+            </div>
+        </div>
+<script>
+        $(".freeUse").click(function(){
+            window.open("https://cloud.chatbot.cn/cloud/register?phone="+$("#phoneNum").val())
+        })
+</script>
+<script type="text/javascript">
+                $(document).ready(function(){
+                    $(".footer .on").click(function(){
+                        $(".footer .on p").toggleClass("dis")
+                    });
+                });
+
+             $(document).ready(function() {
+                 // val()无参数是取值，有参数是设置
+                 // 为了更好的兼容性，将下面的val()设置与input中的placeholder的值设置相同
+                 $(".sbox p input").val("");
+                 textFill($('input.text1'));
+             });
+
+             function textFill(input) {
+                 var originalvalue = input.val();
+                 input.focus(function() {
+                     if ($.trim(input.val()) == originalvalue) {
+                         input.val('');
+                     }
+                 });
+                 input.blur(function() {
+                     if ($.trim(input.val()) == '') {
+                         input.val(originalvalue);
+                     }
+                 });
+             }
+</script>
+<script>
+$(document).ready(function(){
+    $(".footer .on").click(function(){
+        $(".footer .on p").toggleClass("dis")
+    });
+});
+// 从地址栏获取参数
+(function ($) {
+    $.getUrlParam = function (name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;
+    }
+})(jQuery);
+var currentKey = $.getUrlParam('key');
+
+if(currentKey =="58"){
+    $('.biao a').eq(2).addClass("on").siblings().removeClass('on')
+}else if(currentKey =="ge"){
+    $('.biao a').eq(3).addClass("on").siblings().removeClass('on')
+}else if(currentKey =="zgcyh"){
+    $(".tab01 ul li").eq(2).addClass("on").siblings().removeClass('on')
+}
+</script>
+<script src="./js/main.js" charset="utf-8"></script>
+<script src='http://cloud.chatbot.cn/cloud/robot/webjs/5b3c47952400008a1b1f05c3' language="JavaScript"></script>
+            <!--百度统计-->
+        <script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?c1ca7e2ebb1260ee586994702dcb5f5c";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+            <!--百度统计/-->
+            <!--cnzz-->
+        <div style="display: none;">
+            <script type="text/javascript">
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+      document.write(unescape("%3Cspan id='cnzz_stat_icon_1256449100'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol +
+              "s95.cnzz.com/stat.php%3Fid%3D1256449100' type='text/javascript'%3E%3C/script%3E"));
+
+    </script>
+        </div>
+            <!--cnzz/-->
+</body>
+</html>

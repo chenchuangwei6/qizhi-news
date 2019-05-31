@@ -1,0 +1,113 @@
+@(newsOpt: Option[News], isRecommended: Boolean, category: String, page: Int, isRecommendedEdit :Boolean)(implicit request: Request[AnyContent])
+
+@main("添加新闻", request) {
+<link rel="stylesheet" href="/assets/plugins/quill/quill.snow.css">
+<style>
+/* Set default font-family */
+#quill-container {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", 微软雅黑, "STHeiti Light", Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  height: 500px;
+}
+.layui-upload-file, .layui-upload-button { display: none;}
+
+.ql-editor p, .ql-editor ol, .ql-editor ul, .ql-editor pre, .ql-editor blockquote, .ql-editor h1, .ql-editor h2, .ql-editor h3, .ql-editor h4, .ql-editor h5, .ql-editor h6 {
+    margin: 5px 0px 5px;
+    padding: 10px 0px 5px;
+}
+</style>
+<div class="row" style="margin-top: 15px;">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <!-- Default panel contents -->
+            <div class="panel-heading"><h4>添加新闻</h4></div>
+            <div class="panel-body" style="padding-right: 0px;">
+                <form id="form" action="/add" method="post">
+                    <input type="hidden" name="page" value="@{page}"/>
+                    <input type="hidden" name="isRecommended" value="@{isRecommended}"/>
+                    <input type="hidden" name="isRecommendedEdit" value="@{isRecommendedEdit}"/>
+                    <div class="form-group">
+                        <label>新闻标题</label>
+                        <input name="title" class="form-control" value='@newsOpt.map(_.title).getOrElse("")'>
+                    </div>
+                    <div class="form-group">
+                        <label>新闻简介</label>
+                        <input name="intro" class="form-control" value='@newsOpt.map(_.intro).getOrElse("")'>
+                    </div>
+                    @* category-news *@
+                    <div class="form-group">
+                        <label>新闻分类</label>
+                        <select name="category" class="form-control input-small category" style="width: auto;">
+                            <option value="default">请选择</option>
+                            <option value="industry">行业新闻</option>
+                            <option value="productDynamic">产品动态</option>
+                            <option value="customerCase">客户案例</option>
+                        </select>
+                    </div>
+                    @* category-news *@
+                    <div class="form-group">
+                        <label>封面图片</label>
+                        <input id="file" type="file">
+                        <input id="fileHidden" name="image" type="hidden"  value='@newsOpt.map(_.image).getOrElse("")'>
+                        <p class="help-block">@newsOpt.map(_ => "封面图片已上传！").getOrElse("该图片作为封面显示在新闻列表页面。")</p>
+                    </div>
+                    <div class="form-group">
+                        <label>新闻内容</label>
+                        @if(newsOpt.nonEmpty){
+                        <input name="_id" type="hidden" value='@newsOpt.get._id'>
+                        }
+                        <input id="content" name="content" type="hidden" value='@newsOpt.map(_.content).getOrElse("")'>
+                        <div id="quill-container">@Html(newsOpt.map(_.content.get).getOrElse(""))</div>
+                    </div>
+                    <button class="btn btn-primary">确认提交</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+}
+
+<script type="text/javascript" src="/assets/plugins/quill/quill.min.js"></script>
+<script>
+var quill = new Quill('#quill-container', {
+  theme: 'snow',
+  modules: {
+    toolbar: {
+      container : [
+        [{ 'size': [] }],
+        [ 'bold', 'italic', 'underline', 'strike' ],
+        [{ 'color': [] }, { 'background': [] }],
+        [{ 'script': 'super' }, { 'script': 'sub' }],
+        [{ 'header': 1 }, { 'header': 2 }, { 'header': [1, 2, 3, 4, 5, 6, false] }],
+        ['blockquote', 'code-block' ],
+        [{ 'list': 'ordered' }, { 'list': 'bullet'}, { 'indent': '-1' }, { 'indent': '+1' }],
+        [ 'direction', { 'align': [] }],
+        [ 'link', 'image' ],
+        [ 'clean' ]
+      ]
+    }
+  }
+});
+
+$('#form').submit(function(){
+  $('#content').val(quill.root.innerHTML);
+});
+
+$('#file').on('change', function(){
+    let reader = new FileReader();
+    reader.onload = (e) => {
+      $('#fileHidden').val(e.target.result);
+    };
+    reader.readAsDataURL($('#file')[0].files[0]);
+});
+
+$(".category option").each(function () {
+    if($(this).val().trim() == "@category"){
+        $(this).attr('selected',true);
+        return
+    }
+});
+
+</script>
+
