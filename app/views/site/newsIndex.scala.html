@@ -160,7 +160,7 @@ $(document).ready(function(){
    <div class="list ov">
     <ul>
         @for(n <- news) {
-            <li><a href="news-@{n._id}.html">
+            <li><a href="news/news-@{n._id}.html">
                 <strong><img src="@{n.image}" />
                     <span>@utils.DateTimeUtil.toString(n.updateTime, "yyyy-MM-dd")</span></strong>
                 <h1>@{n.title}</h1>
